@@ -7,6 +7,7 @@ public class controlar : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float rotationSpeed = 10f; // Velocidad de rotación para suavizar el giro
+    public Animator animator;
 
     void Update()
     {
@@ -19,6 +20,12 @@ public class controlar : MonoBehaviour
         
         // Convertir la entrada del joystick en un vector de movimiento en 3D
         Vector3 moveDirection = new Vector3(moveInput.x, 0, moveInput.y);
+
+        // Calcular la magnitud del movimiento para determinar si está caminando o en idle
+        float speed = moveDirection.magnitude;
+
+        // Actualizar el parámetro "Speed" en el Animator
+        animator.SetFloat("Speed", speed);
 
         // Si hay movimiento, rotar el personaje para que mire en esa dirección
         if (moveDirection != Vector3.zero)

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: AcKvnxL/////AAABmcnU7tLJ80wigFYdrNpLyyltAKMSGiwUwib1tk9uvk3WvWRlREx6ZPFdx5eNY8dNoVKr0MT+e2oihD+2Rw3yrcNpy/48wxzZMA5y4a3LFDIym/op/WYa+UoHouKiVW7VcsbpbGHR7Vvp8tYuAOxV+wbPcPbX+G6ddZljzXDEM+5z2kEkCHy/VDczK2vewNhd9kVoB8PLfzK5MmzbU1ev3jpHN6F4rQDcL5aJDhoFbndaStwLLfSEONyD59jcjgWdVELo7W42Yvy+BZahiBWPn3RQ93JBifQuw5p0w/VUaqUQ8ZPxlCoMR/Rn4ARZsn4LUs3wf1ZOmjUjsg6xMP44Zf44B8IOl9Xpem+nHSSSdY54
-    ufoLicenseKey: QVhxZ0tvLy8vLy8vQUFBQUtGV0JGMmFIdEVmbHIrdUZCZzJiTk1ROEs1UzdlYU0vbVlXd05jR2dSeWFRdmRnYWdLNkxITEZRbTZSRERPYVlkWkRJblVNTHRuV2p3a3NFUkNiazBZNWNHSjJSYStWWm1COTN2V1pxTVhjNElEUDJreTA0VkRRcFlQQ0c0cDVvaVI3MHQweUVmV09xN3ovbkx4WHNMZ3lrMFhjRWVoZVBnZ2FndkNhR2xaTjFPUUxPaFhvT01ZcmUwemo1SnNHUzkvVitHQTVEMXlLZUFnYmhDc2g4blAybmYzNjA0Ky80Tld4Q3g5MTlsSDNNbnRGLzdzSWxWd2NaekhYbW5LTGVkVFA4UlVFR1FIc25lWTg4eCtkUkFYUGhyY0Uwd3pvV1lic1hhR3NISHhXRDdNYWtTVlNSd3d3bVQ1MW12VGF3dHVRN25zNnBkNmRBcDFmd1JuV0RmOWpCMVBBbGNRcE1YemFOVFp3cktCWlo=
+    vuforiaLicenseKey: AX0h18n/////AAABmUw11kMCp0AIh72en6GB7LKB+gmG0/I9Tab2lz6Z4KNHqNeix5qaifOcDvUPPKn+ZCZXewoDIpFKnmYCZbTaR2e/Cet34pQfS57o+ezOR6lyKG8SumlC/BUIdzELGo8JeaMOK1oAeycUfclO8fzO4QBaDJu/e2fJFiI3V/MHY4DSd0eM7e1smZm6mk9Sdb8+bViX/JpPkmYEp0rOOfEgemjVwvA5P4fJ3c/cxHct7mEPc4Ik4w16phCmQGe/iOgHWOmUbYRO4/oNlDo3Z9ATnUJvZtx5pIVCETxy6EsV5Uy294hWbGp1dW79OsZX3ulfuAy1ojaWQ+sGhjvOYs5jqTc3Xh3ongcGJmwK4UxThAru
+    ufoLicenseKey: QWVQbTZ2RC8vLy8vQUFBQUtJcVhHMXhxT0VmSGdwZjM2WnFiRldWb3NkR1BpZlBQY1B0R3Rwc0lMeFYvbFFzU0R4bTZyaGZUekRHdk8vcUpPQng1SWlsc2x2MmhKWHlvTnV3VEhiZ3JNMGsxZm9Rd2U5TUVBak1BNkdKTi82cWYyeFVUU21nVGo0R2NLYlhPZGNFMnh0bzdPRjVQK0JUUlN2WDIwekRtbk5hd0h3SnFtaGVJNnBwZkppMThBNWt3ZWo2ZmtZa2g0WVN5eS9HVERXV3FCUDJBT1JWeTRqdEppUUU2cGx3SmVKd0dVcjZRZC96MUJSL2NkREdZMUVlWnh1SFZXZDZXRmZheXBqcmlPQ05VWldKQzJOc1A0OGxZYmZZSFBtYlpNS0dlL3lyZTZsR3pSR2tZVTBJZjNiLzE2ckVUZldoNlcvWFlFOTdoL2Y3SzUxZjFrd1pobTZYTS9VV1JWWVN4bmt6Z2NEekw0bHl6ZURibFl6b3o=
     delayedInitialization: 0
     cameraFocusModeSetting: 2
     cameraDeviceModeSetting: -1
@@ -24,7 +24,7 @@ MonoBehaviour:
     shareRecordingsInITunes: 0
     logLevel: 0
     version: 10.25.4
-    eulaAcceptedVersions: '{"Values":["10.25","10.17"]}'
+    eulaAcceptedVersions: '{"Values":["10.25","10.17","10.27"]}'
   database:
     disableModelExtraction: 0
   shaders:
