@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 4909153637929224141}
   - component: {fileID: 4909153637929224142}
   m_Layer: 0
-  m_Name: Manolo
+  m_Name: ManoloRandomizado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -232,8 +232,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4909153638275704637}
   - component: {fileID: 4909153638275704638}
-  - component: {fileID: 2469083286117803325}
-  - component: {fileID: 7090814387949927211}
+  - component: {fileID: 1777069230569254509}
+  - component: {fileID: 1661106636304411957}
   m_Layer: 0
   m_Name: Persona
   m_TagString: Untagged
@@ -281,7 +281,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2469083286117803325
+--- !u!114 &1777069230569254509
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -293,25 +293,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff855b9f7b30d746a103bc62d64ddae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ojos:
-  - {fileID: 21300000, guid: 0b91e2cc97f262641a5a40d0c7541b86, type: 3}
-  - {fileID: 21300000, guid: 2068ca3fa82055549b7a8a2d68fa8456, type: 3}
-  - {fileID: 21300000, guid: a943ad0b477de9240a51792f0d67080b, type: 3}
-  bocas:
-  - {fileID: 21300000, guid: 2e138894f5b14d245ace5feacbdceeaa, type: 3}
-  - {fileID: 21300000, guid: d62bf136017c6ac468880b0be5af2445, type: 3}
-  - {fileID: 21300000, guid: 8305937f32615f94b8a6db2fa45f6a86, type: 3}
-  ropas:
-  - {fileID: 2100000, guid: 8b70a6fa2d1eeaf468effa9c4c298987, type: 2}
-  - {fileID: 2100000, guid: e20483e117be6dc4b9679c39a8839895, type: 2}
-  - {fileID: 2100000, guid: df041687ca1965c4281e0c31b21a5076, type: 2}
-  - {fileID: 2100000, guid: 4486e4ac58c387246a2b786f7dbe0762, type: 2}
-  coloresDePiel:
-  - {fileID: 2100000, guid: d3f006334b9e3d84f8f502def2e00923, type: 2}
-  - {fileID: 2100000, guid: d859369fba858b448b3b61620dceb740, type: 2}
-  - {fileID: 2100000, guid: ac51be80c200bb940989d7dd71c850a6, type: 2}
-  - {fileID: 2100000, guid: 296316a3d55a6334ba14c77c93fbd518, type: 2}
-  personaje: {fileID: 4909153638275704639}
+  ojos: []
+  bocas: []
+  ropas: []
+  coloresDePiel: []
+  personaje: {fileID: 0}
   ojosPrueba:
   - Ojos1
   - Ojos2
@@ -332,7 +318,7 @@ MonoBehaviour:
   - Negro
   - Arabe
   - Oriental
---- !u!114 &7090814387949927211
+--- !u!114 &1661106636304411957
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
