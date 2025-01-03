@@ -298,26 +298,30 @@ MonoBehaviour:
   ropas: []
   coloresDePiel: []
   personaje: {fileID: 0}
-  ojosPrueba:
-  - Ojos1
-  - Ojos2
-  - Ojos3
-  - Ojos4
-  bocasPrueba:
-  - Boca1
-  - Boca2
-  - Boca3
-  - Boca4
-  ropasPrueba:
-  - Roja
-  - Azul
-  - Verde
-  - Amarillo
-  coloresDePielPrueba:
-  - Caucasico
-  - Negro
-  - Arabe
-  - Oriental
+  nombresH:
+  - Alejandro
+  - Alberto
+  - Diego
+  - Carlos
+  - Hugo
+  apellidosH:
+  - Martinez
+  - Hernandez
+  - Rodriguez
+  - Sanchez
+  nombresM:
+  - Sara
+  - Sofia
+  - Samanta
+  - Raquel
+  paises:
+  - Espana
+  - Italia
+  - Argentina
+  - Marruecos
+  sexos:
+  - M
+  - F
 --- !u!114 &1661106636304411957
 MonoBehaviour:
   m_ObjectHideFlags: 0

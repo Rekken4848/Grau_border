@@ -10,6 +10,7 @@ public class SistemaJuego : MonoBehaviour
     public int ronda; //Empieza en 0 y pasa a 1
     public int numRondas;
     public int aciertos;
+    public int fallos;
     public bool nivelIniciado = false;
     public bool nivelFinalizado = false;
 
@@ -17,6 +18,7 @@ public class SistemaJuego : MonoBehaviour
     public GameObject personaje;
     public Transform coordenadasPj;
     public GameObject personajeActual;
+    public Personaje personaActualCaracteristicas;
 
     // Datos pasaporte
     public GameObject pasaporte;
@@ -47,6 +49,8 @@ public class SistemaJuego : MonoBehaviour
         }
 
         ronda = 0;
+        aciertos = 0;
+        fallos = 0;
 
         //Iniciamos nivel
         nivelIniciado = true;
@@ -72,9 +76,17 @@ public class SistemaJuego : MonoBehaviour
         // Spawneamos el nuevo pj
         personajeActual = Instantiate(personaje, coordenadasPj.position, coordenadasPj.rotation);
 
+        personaActualCaracteristicas = personajeActual.GetComponentInChildren<Personaje>();
+
         // Los datos del pasaported
-        nombre.text = "David";
-        pais.text = "Espana";
+        //personaActualCaracteristicas.PasaporteDelPersonaje.Nombre = "David";
+        //personaActualCaracteristicas.PasaporteDelPersonaje.LugarDeNacimiento = "Espana";
+
+        // Aqui no se han creado aun los nombres, mover
+        nombre.text = personaActualCaracteristicas.PasaporteDelPersonaje.Nombre;
+        pais.text = personaActualCaracteristicas.PasaporteDelPersonaje.LugarDeNacimiento;
+        //nombre.text = "David";
+        //pais.text = "Espana";
     }
 
     public void FinRonda()
@@ -85,12 +97,32 @@ public class SistemaJuego : MonoBehaviour
         // Resetear pasaporte
 
         // Si es la ronda final acabar juego
-        if(ronda == 0)
+        if(ronda == numRondas)
         {
             nivelFinalizado = true;
         }
+        else
+        {
+            // Cambiamos de ronda
+            ronda++;
+            iniciarRonda();
+        }
+    }
 
-        // Cambiamos de ronda
-        ronda++;
+    public bool comprobarAcierto()
+    {
+        // Comprobar si el pasaporte es correcto
+        if (personaActualCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.OjosFoto == personaActualCaracteristicas.Ojos && personaActualCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.BocaFoto == personaActualCaracteristicas.Boca && personaActualCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.RopaFoto == personaActualCaracteristicas.Ropa && personaActualCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.ColorPiel == personaActualCaracteristicas.ColorPiel)
+        {
+            // Proximamente poner tambien estas comprobaciones: fecha expedicion ( que no este caducado ), fecha normal (que no sea creado en el futuro o algo raro)
+            // Y que coincidan los datos con el futuro papel, incluso algo de que sea de x pais
+            aciertos++;
+            return true;
+        }
+        else
+        {
+            fallos++;
+            return false;
+        }
     }
 }

@@ -8,6 +8,7 @@ public class Personaje : MonoBehaviour
     private Sprite boca;
     private Material ropa;
     private Material colorPiel;
+    private PasaportePersonaje pasaporteDelPersonaje;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,11 @@ public class Personaje : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void Awake()
+    {
+        pasaporteDelPersonaje = new PasaportePersonaje();
     }
 
     public Sprite Ojos
@@ -42,5 +48,11 @@ public class Personaje : MonoBehaviour
     {
         get { return colorPiel; }
         set { colorPiel = value; }
+    }
+
+    public PasaportePersonaje PasaporteDelPersonaje
+    {
+        get { return pasaporteDelPersonaje; }
+        set { pasaporteDelPersonaje = value; }
     }
 }
