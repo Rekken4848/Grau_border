@@ -14,21 +14,17 @@ public class PasaportePersonaje : MonoBehaviour
     private string numeroDePasaporte;
     private DateTime fechaDeCaducidad;
     private FotoPasaporte fotoDelPasaporte;
+    private PermisoViaje permisoDelViaje;
 
     public PasaportePersonaje()
     {
         fotoDelPasaporte = new FotoPasaporte();
+        permisoDelViaje = new PermisoViaje();
     }
     // Start is called before the first frame update
     void Start()
     {
-        /*nombre = "";
-        apellidos = "";
-        fechaDeNacimiento = "";
-        lugarDeNacimiento = "";
-        sexo = "";
-        numeroDePasaporte = "";
-        fechaDeCaducidad = "";*/
+        
     }
 
     // Update is called once per frame
@@ -39,7 +35,7 @@ public class PasaportePersonaje : MonoBehaviour
 
     private void Awake()
     {
-        // fotoDelPasaporte = new FotoPasaporte();
+        
     }
 
     public string Nombre
@@ -90,6 +86,12 @@ public class PasaportePersonaje : MonoBehaviour
         set { fotoDelPasaporte = value; }
     }
 
+    public PermisoViaje PermisoDelViaje
+    {
+        get { return permisoDelViaje; }
+        set { permisoDelViaje = value; }
+    }
+
     public class FotoPasaporte
     {
         private Sprite ojosFoto;
@@ -119,6 +121,59 @@ public class PasaportePersonaje : MonoBehaviour
         {
             get { return colorPielFoto; }
             set { colorPielFoto = value; }
+        }
+    }
+
+    public class PermisoViaje
+    {
+        private string nombrePermiso;
+        private string apellidosPermiso;
+        private DateTime fechaDeNacimientoPermiso;
+        private string lugarDeNacimientoPermiso;
+        private string sexoPermiso;
+        private string numeroDePasaportePermiso;
+        private DateTime fechaDeCaducidadPermiso;
+
+        public string NombrePermiso
+        {
+            get { return nombrePermiso; }
+            set { nombrePermiso = value; }
+        }
+
+        public string ApellidosPermiso
+        {
+            get { return apellidosPermiso; }
+            set { apellidosPermiso = value; }
+        }
+
+        public DateTime FechaDeNacimientoPermiso
+        {
+            get { return fechaDeNacimientoPermiso; }
+            set { fechaDeNacimientoPermiso = value; }
+        }
+
+        public string LugarDeNacimientoPermiso
+        {
+            get { return lugarDeNacimientoPermiso; }
+            set { lugarDeNacimientoPermiso = value; }
+        }
+
+        public string SexoPermiso
+        {
+            get { return sexoPermiso; }
+            set { sexoPermiso = value; }
+        }
+
+        public string NumeroDePasaportePermiso
+        {
+            get { return numeroDePasaportePermiso; }
+            set { numeroDePasaportePermiso = value; }
+        }
+
+        public DateTime FechaDeCaducidadPermiso
+        {
+            get { return fechaDeCaducidadPermiso; }
+            set { fechaDeCaducidadPermiso = value; }
         }
     }
 }

@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,6 +13,7 @@ public class SistemaJuego : MonoBehaviour
     public int numRondas;
     public int aciertos;
     public int fallos;
+    public float dinero;
     public bool nivelIniciado = false;
     public bool nivelFinalizado = false;
 
@@ -20,10 +23,7 @@ public class SistemaJuego : MonoBehaviour
     public GameObject personajeActual;
     public Personaje personaActualCaracteristicas;
 
-    // Datos pasaporte
-    public GameObject pasaporte;
-    public TextMeshPro nombre;
-    public TextMeshPro pais;
+    public CountryList paisesPermitidos;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +51,7 @@ public class SistemaJuego : MonoBehaviour
         ronda = 0;
         aciertos = 0;
         fallos = 0;
+        dinero = 0f;
 
         //Iniciamos nivel
         nivelIniciado = true;
@@ -76,17 +77,9 @@ public class SistemaJuego : MonoBehaviour
         // Spawneamos el nuevo pj
         personajeActual = Instantiate(personaje, coordenadasPj.position, coordenadasPj.rotation);
 
+        personajeActual.gameObject.SetActive(true);
+
         personaActualCaracteristicas = personajeActual.GetComponentInChildren<Personaje>();
-
-        // Los datos del pasaported
-        //personaActualCaracteristicas.PasaporteDelPersonaje.Nombre = "David";
-        //personaActualCaracteristicas.PasaporteDelPersonaje.LugarDeNacimiento = "Espana";
-
-        // Aqui no se han creado aun los nombres, mover
-        nombre.text = personaActualCaracteristicas.PasaporteDelPersonaje.Nombre;
-        pais.text = personaActualCaracteristicas.PasaporteDelPersonaje.LugarDeNacimiento;
-        //nombre.text = "David";
-        //pais.text = "Espana";
     }
 
     public void FinRonda()
@@ -116,12 +109,74 @@ public class SistemaJuego : MonoBehaviour
         {
             // Proximamente poner tambien estas comprobaciones: fecha expedicion ( que no este caducado ), fecha normal (que no sea creado en el futuro o algo raro)
             // Y que coincidan los datos con el futuro papel, incluso algo de que sea de x pais
-            aciertos++;
-            return true;
+
+            // Establecemos la fecha actual para hacer las comprobaciones
+            DateTime fechaActual = new DateTime(2025, 1, 1);
+            // Comprobamos que no este caducado
+            if (personaActualCaracteristicas.PasaporteDelPersonaje.FechaDeCaducidad >= fechaActual)
+            {
+                // Comprobamos que la fecha de nacimiento sea correcta
+                if (personaActualCaracteristicas.PasaporteDelPersonaje.FechaDeNacimiento < fechaActual)
+                {
+                    // Es de nuestro pais, todo correcto
+                    if (personaActualCaracteristicas.PasaporteDelPersonaje.LugarDeNacimiento == "Espana")
+                    {
+                        aciertos++;
+                        dinero += 100f;
+                        return true;
+                    }
+                    else
+                    {
+                        // Es inmigrante, comprobar permiso y pais valido
+                        if (paisesPermitidos.AllowedCountries.Contains(personaActualCaracteristicas.PasaporteDelPersonaje.LugarDeNacimiento))
+                        {
+                            // Nacio en un pais valido
+                            if(personaActualCaracteristicas.PasaporteDelPersonaje.Nombre == personaActualCaracteristicas.PasaporteDelPersonaje.PermisoDelViaje.NombrePermiso &&
+                                personaActualCaracteristicas.PasaporteDelPersonaje.Apellidos == personaActualCaracteristicas.PasaporteDelPersonaje.PermisoDelViaje.ApellidosPermiso &&
+                                personaActualCaracteristicas.PasaporteDelPersonaje.FechaDeNacimiento == personaActualCaracteristicas.PasaporteDelPersonaje.PermisoDelViaje.FechaDeNacimientoPermiso &&
+                                personaActualCaracteristicas.PasaporteDelPersonaje.Sexo == personaActualCaracteristicas.PasaporteDelPersonaje.PermisoDelViaje.SexoPermiso &&
+                                personaActualCaracteristicas.PasaporteDelPersonaje.FechaDeCaducidad == personaActualCaracteristicas.PasaporteDelPersonaje.PermisoDelViaje.FechaDeCaducidadPermiso &&
+                                personaActualCaracteristicas.PasaporteDelPersonaje.NumeroDePasaporte == personaActualCaracteristicas.PasaporteDelPersonaje.PermisoDelViaje.NumeroDePasaportePermiso &&
+                                personaActualCaracteristicas.PasaporteDelPersonaje.LugarDeNacimiento == personaActualCaracteristicas.PasaporteDelPersonaje.PermisoDelViaje.LugarDeNacimientoPermiso)
+                            {
+                                // Sus datos del permiso coinciden con los del pasaporte
+                                aciertos++;
+                                dinero += 100f;
+                                return true;
+                            }
+                            else
+                            {
+                                fallos++;
+                                dinero -= 50f;
+                                return false;
+                            }
+                        }
+                        else
+                        {
+                            fallos++;
+                            dinero -= 50f;
+                            return false;
+                        }
+                    }
+                }
+                else
+                {
+                    fallos++;
+                    dinero -= 50f;
+                    return false;
+                }
+            }
+            else
+            {
+                fallos++;
+                dinero -= 50f;
+                return false;
+            }
         }
         else
         {
             fallos++;
+            dinero -= 50f;
             return false;
         }
     }
