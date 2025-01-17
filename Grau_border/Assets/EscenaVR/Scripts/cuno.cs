@@ -3,35 +3,36 @@ using System.Collections;
 
 public class ColisionConSello : MonoBehaviour
 {
-    public bool acierto;  // Variable de acierto que se activará cuando se ponga el sello
+    public bool acierto;
     public SistemaJuego sistemaJuego;
-
 
     void OnCollisionEnter(Collision col)
     {
         // Comprobamos si el objeto con el que colisionamos tiene el tag "Papel"
         if (col.gameObject.CompareTag("Papel"))
         {
-            // Buscamos el sello dentro del objeto colisionado
-            Transform sello = col.transform.Find("stamp");
+            // Buscamos stamp y stamp2 dentro del objeto "Papel"
+            Transform stamp = col.transform.Find("stamp");
+            Transform stamp2 = col.transform.Find("stamp2");
 
-            if (sello != null)
+            // Verificamos si ya hay un sello activo, si es así, no permitimos colocar otro
+            if ((stamp != null && stamp.gameObject.activeSelf) || (stamp2 != null && stamp2.gameObject.activeSelf))
             {
-                // Activamos el sello si está desactivado
-                if (!sello.gameObject.activeSelf)
-                {
-                    sello.gameObject.SetActive(true);
-                    // Activamos la variable de acierto
-                    // acierto = true;
-                    // sistemaJuego.aciertos++;
-                    acierto = sistemaJuego.comprobarAcierto();
-
-                    // Comenzamos la rutina para destruir el sello después de 10 segundos
-                    StartCoroutine(DestruirSelloDespuesDeTiempo(10f, sello));
-                }
+                return; // Salimos de la función y no hacemos nada
             }
-            else
+
+            // Verificamos qué objeto colisionó y activamos el sello correspondiente
+            if (gameObject.CompareTag("cuno_verde") && stamp2 != null)
             {
+                stamp2.gameObject.SetActive(true);
+                acierto = sistemaJuego.comprobarAcierto(true);
+                StartCoroutine(DestruirSelloDespuesDeTiempo(10f, stamp2));
+            }
+            else if (gameObject.CompareTag("cuno_rojo") && stamp != null)
+            {
+                stamp.gameObject.SetActive(true);
+                acierto = sistemaJuego.comprobarAcierto(false);
+                StartCoroutine(DestruirSelloDespuesDeTiempo(10f, stamp));
             }
         }
     }
@@ -39,19 +40,14 @@ public class ColisionConSello : MonoBehaviour
     // Corrutina para destruir el sello después de un tiempo
     private IEnumerator DestruirSelloDespuesDeTiempo(float tiempo, Transform sello)
     {
-        // Esperamos el tiempo indicado
         yield return new WaitForSeconds(tiempo);
 
-        // Destruimos el sello si existe
-        if (sello.gameObject.activeSelf)
+        if (sello != null && sello.gameObject.activeSelf)
         {
             sello.gameObject.SetActive(false);
         }
 
-        // Reseteamos la variable de acierto si es necesario
         acierto = false;
-
-        // Finalizamos el turno
         sistemaJuego.FinRonda();
     }
 }

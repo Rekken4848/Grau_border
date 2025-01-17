@@ -164,7 +164,7 @@ Transform:
   m_GameObject: {fileID: 4909153638062982870}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.513, y: 1.765, z: 2.256}
+  m_LocalPosition: {x: -0.527, y: 1.765, z: 2.241}
   m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -298,6 +298,202 @@ MonoBehaviour:
   ropas: []
   coloresDePiel: []
   personaje: {fileID: 0}
+  pasaporte: {fileID: 0}
+  nombre: {fileID: 0}
+  pais: {fileID: 0}
+  apellido: {fileID: 0}
+  fechaNacimiento: {fileID: 0}
+  sexo: {fileID: 0}
+  fechaCaducidad: {fileID: 0}
+  numeroPasaporte: {fileID: 0}
+  permiso: {fileID: 0}
+  nombrePermiso: {fileID: 0}
+  paisPermiso: {fileID: 0}
+  apellidoPermiso: {fileID: 0}
+  fechaNacimientoPermiso: {fileID: 0}
+  sexoPermiso: {fileID: 0}
+  fechaCaducidadPermiso: {fileID: 0}
+  numeroPasaportePermiso: {fileID: 0}
+  ojos1Boca1PielCaucasica:
+  - {fileID: 21300000, guid: 4041b78f117d1d64ca848fe1bb1256e3, type: 3}
+  - {fileID: 21300000, guid: 4c4f7d0ced6080845941a72e445bc728, type: 3}
+  - {fileID: 21300000, guid: bf8a2a4ebf342144784bbd97846368d7, type: 3}
+  - {fileID: 21300000, guid: 6f0ef9438b69b9a47b1aa879436e6dd8, type: 3}
+  ojos1Boca1PielMarron:
+  - {fileID: 21300000, guid: de64be86ba505644fbb8bfecdbe714c2, type: 3}
+  - {fileID: 21300000, guid: d4f89a8e3fddb2641b38cd4798028ee7, type: 3}
+  - {fileID: 21300000, guid: 7530990a1a820da4a878f03c7e0a1170, type: 3}
+  - {fileID: 21300000, guid: 08552682dcdd6ed40a1e164c235e2b67, type: 3}
+  ojos1Boca1PielNegra:
+  - {fileID: 21300000, guid: 3cff057f8c887074585eaa6a58e6c2bd, type: 3}
+  - {fileID: 21300000, guid: 236d2539e63dcf041b995eb586128eee, type: 3}
+  - {fileID: 21300000, guid: 221c142c648835e4a844e7cd38899012, type: 3}
+  - {fileID: 21300000, guid: 0152b71a220b0f54bb592837b2f7c439, type: 3}
+  ojos1Boca1PielOriental:
+  - {fileID: 21300000, guid: 09c387b5f2b963e42ab4a49037f7400b, type: 3}
+  - {fileID: 21300000, guid: 12be3506c8d2e86448e94ec83d2d765b, type: 3}
+  - {fileID: 21300000, guid: 8f4a343b677aa3e4886cc47f90ea4668, type: 3}
+  - {fileID: 21300000, guid: ca9a03341fee3ce4b84a13c3ab02e040, type: 3}
+  ojos1Boca2PielCaucasica:
+  - {fileID: 21300000, guid: 42ca9dbf99ae9ca4b9551f0aa4536bae, type: 3}
+  - {fileID: 21300000, guid: 9caef53af11f725459ec5e0fd1ceb15f, type: 3}
+  - {fileID: 21300000, guid: d149ac34ea95c7844a41a7f3be3b4eb4, type: 3}
+  - {fileID: 21300000, guid: a6ce216a3d02d6b4999fd7193e028647, type: 3}
+  ojos1Boca2PielMarron:
+  - {fileID: 21300000, guid: 8e0b3a1bc39b3df40b7e2dbf8ebfd3d1, type: 3}
+  - {fileID: 21300000, guid: a2c300fc507e57c4f93f4174e92e98ae, type: 3}
+  - {fileID: 21300000, guid: 41d69ae43b1fe644ab7c73ca1e751252, type: 3}
+  - {fileID: 21300000, guid: 776c21f6b103dbf46a97d0dd9126e1a5, type: 3}
+  ojos1Boca2PielNegra:
+  - {fileID: 21300000, guid: 578a583e0b47c374e8cc1517f1bdf106, type: 3}
+  - {fileID: 21300000, guid: 0150dc08d525a9146bb720034509eeed, type: 3}
+  - {fileID: 21300000, guid: 6dae92791a31c8f499004e8baa0c3cd2, type: 3}
+  - {fileID: 21300000, guid: a4e2eca52d4da8c4ab1a6ae72eb4e224, type: 3}
+  ojos1Boca2PielOriental:
+  - {fileID: 21300000, guid: 164bdd15387222844b1b79d8a8ed4cc6, type: 3}
+  - {fileID: 21300000, guid: 15277d00420aea544aa39fe7da3439ae, type: 3}
+  - {fileID: 21300000, guid: 8b5b33db41c1dfe459ec26dda1d103cb, type: 3}
+  - {fileID: 21300000, guid: f3be377bc02f87b4f906f285c278b7b4, type: 3}
+  ojos1Boca3PielCaucasica:
+  - {fileID: 21300000, guid: 91b0ac240af9dd04ea88127774d72339, type: 3}
+  - {fileID: 21300000, guid: c59e7486d82a1af41a5b4d185f0fb58c, type: 3}
+  - {fileID: 21300000, guid: 228ae09349a1d4042b42d103938e62a1, type: 3}
+  - {fileID: 21300000, guid: 78497e6b3d1c76d4689176f5cccb46fe, type: 3}
+  ojos1Boca3PielMarron:
+  - {fileID: 21300000, guid: d175c80123d7c474b8a61a2b401c3878, type: 3}
+  - {fileID: 21300000, guid: 095fe801b9f4a8c43b69d98093470fb8, type: 3}
+  - {fileID: 21300000, guid: 80f89824233068142bbe16d0bff82959, type: 3}
+  - {fileID: 21300000, guid: f80c2aa69613afc4791f713bd437187f, type: 3}
+  ojos1Boca3PielNegra:
+  - {fileID: 21300000, guid: 289980c2da063ea44be36d6592c06ccb, type: 3}
+  - {fileID: 21300000, guid: 72dda70993868694da92402c0a7f99c9, type: 3}
+  - {fileID: 21300000, guid: e2292ab349b35924ea085274171a096d, type: 3}
+  - {fileID: 21300000, guid: 518e70d0f6db46140a67be47d4603520, type: 3}
+  ojos1Boca3PielOriental:
+  - {fileID: 21300000, guid: 1e32b3c154e18db4d8ccfba405402920, type: 3}
+  - {fileID: 21300000, guid: c591de99f9950d846a379b8501ac6db7, type: 3}
+  - {fileID: 21300000, guid: fd2637b0e60f794489b4809baa019127, type: 3}
+  - {fileID: 21300000, guid: 3c8ebb1cd5e466841b20460748f1b960, type: 3}
+  ojos2Boca1PielCaucasica:
+  - {fileID: 21300000, guid: 921155bdfba7b1247b885a8cdaa4ac06, type: 3}
+  - {fileID: 21300000, guid: 941ca88dfa2996746b57e8e8ec3ca745, type: 3}
+  - {fileID: 21300000, guid: fec7c0ecf7d4784498123a83db737c29, type: 3}
+  - {fileID: 21300000, guid: c4f4bce941514624695b59b800577ced, type: 3}
+  ojos2Boca1PielMarron:
+  - {fileID: 21300000, guid: a15610858817a584083cb0967ad2b40c, type: 3}
+  - {fileID: 21300000, guid: 8c7aec9d59c509243a8590eaef5e742f, type: 3}
+  - {fileID: 21300000, guid: 535ef6637e50070468e304edb40ff5f1, type: 3}
+  - {fileID: 21300000, guid: c28200a146421a34aacbc2583488a263, type: 3}
+  ojos2Boca1PielNegra:
+  - {fileID: 21300000, guid: 0ad161c6012e1574cb5300dd3eb10ec9, type: 3}
+  - {fileID: 21300000, guid: ed7dc7a3a593bb8458acf16c1e37ce84, type: 3}
+  - {fileID: 21300000, guid: 3b51f5e20539d7e4780ac28b82685c37, type: 3}
+  - {fileID: 21300000, guid: e81f1ed69f173034c88be1aecea33003, type: 3}
+  ojos2Boca1PielOriental:
+  - {fileID: 21300000, guid: 5e725947911a6e64b964d48a92274a53, type: 3}
+  - {fileID: 21300000, guid: 6d345f1ba11a6ac40b187feb8a7bf707, type: 3}
+  - {fileID: 21300000, guid: 0912e0909c6536147b5c62054303ce9b, type: 3}
+  - {fileID: 21300000, guid: 668d2fcf2af292c44a182b9c140974c5, type: 3}
+  ojos2Boca2PielCaucasica:
+  - {fileID: 21300000, guid: a405cf9974380ab498154c8bd64c6350, type: 3}
+  - {fileID: 21300000, guid: 61b81a89f24ed464faaa7400860eb0e9, type: 3}
+  - {fileID: 21300000, guid: ca2e8540696cca94aa2a7bd36b0afa7a, type: 3}
+  - {fileID: 21300000, guid: 31aad562de1e409468eec1d8a5e55a15, type: 3}
+  ojos2Boca2PielMarron:
+  - {fileID: 21300000, guid: 6dc449b0bce30ad4d9d2cbbab1a3d466, type: 3}
+  - {fileID: 21300000, guid: 20f374f0844056d4fa1f89b9d8dd07ff, type: 3}
+  - {fileID: 21300000, guid: c21e29542ceba0249960b76a7082a5ec, type: 3}
+  - {fileID: 21300000, guid: db2f8e9d0305de54e9f012c28a44a170, type: 3}
+  ojos2Boca2PielNegra:
+  - {fileID: 21300000, guid: de9b9b842cb6a4443a44686b58db4252, type: 3}
+  - {fileID: 21300000, guid: a6b0b074de2c076478e8b05aa7af1145, type: 3}
+  - {fileID: 21300000, guid: 9b242194d33d26d42b4e7d8d7610887c, type: 3}
+  - {fileID: 21300000, guid: c2ac923c18d058746ac1aa07527e1f76, type: 3}
+  ojos2Boca2PielOriental:
+  - {fileID: 21300000, guid: c5d4384d52455e64497c3d1e0bef656a, type: 3}
+  - {fileID: 21300000, guid: 227b09f95ff47374bbef305e9574e756, type: 3}
+  - {fileID: 21300000, guid: 5984eb8cf4dd6e9499519c4e460b2267, type: 3}
+  - {fileID: 21300000, guid: a518e9b16f41656428bc45032ff6ff2b, type: 3}
+  ojos2Boca3PielCaucasica:
+  - {fileID: 21300000, guid: 93a30e34f8040684a95b8961a80e226c, type: 3}
+  - {fileID: 21300000, guid: 629e887bad0ae474295622ec89307235, type: 3}
+  - {fileID: 21300000, guid: bf7a93a3c8432f346a6af7a40ca8fb9b, type: 3}
+  - {fileID: 21300000, guid: 39ed6c242fc027646b65a6de8f7f3e8d, type: 3}
+  ojos2Boca3PielMarron:
+  - {fileID: 21300000, guid: 4478304a14639e942a8aa9c2f485c8df, type: 3}
+  - {fileID: 21300000, guid: 04ee964b89d900641b49c28ab02ed159, type: 3}
+  - {fileID: 21300000, guid: 2f8d5470b61baf946a768a38360474a4, type: 3}
+  - {fileID: 21300000, guid: de3ff57a735dffb40b0e74a004d0581f, type: 3}
+  ojos2Boca3PielNegra:
+  - {fileID: 21300000, guid: cfdccc22df0514e44adb2ae175ea7faa, type: 3}
+  - {fileID: 21300000, guid: affdb1e2fa17de64db3429129038608f, type: 3}
+  - {fileID: 21300000, guid: 558b4e2d16d688a42840c9286e4a70dc, type: 3}
+  - {fileID: 21300000, guid: 772cad7adcada25419c19c10e27b8be8, type: 3}
+  ojos2Boca3PielOriental:
+  - {fileID: 21300000, guid: 5839da540708ded45a9156d6944567eb, type: 3}
+  - {fileID: 21300000, guid: 0ae0e989e1d886044ac6a13d05c801a3, type: 3}
+  - {fileID: 21300000, guid: 3f23c8ec4f141da4c9bdf140e8375285, type: 3}
+  - {fileID: 21300000, guid: a42295a1c2709a44aa0ab13ef6911f34, type: 3}
+  ojos3Boca1PielCaucasica:
+  - {fileID: 21300000, guid: aa9273afd48840d47a5cadafa288e59c, type: 3}
+  - {fileID: 21300000, guid: 866bfed8dd2d90e4b82eec785ab23e3e, type: 3}
+  - {fileID: 21300000, guid: 100faad47a1a8754c9d716863a773c62, type: 3}
+  - {fileID: 21300000, guid: 93229bc29591a3e4bb1e64b928ae18f1, type: 3}
+  ojos3Boca1PielMarron:
+  - {fileID: 21300000, guid: f977f60a7e98cd14a9d5e6033e494604, type: 3}
+  - {fileID: 21300000, guid: 4c46a4fc1864b2948957b25327951a28, type: 3}
+  - {fileID: 21300000, guid: d9a3f4af8a8a5f14d8b5e8a3bca2dbb6, type: 3}
+  - {fileID: 21300000, guid: 62b75dfa3a49e2a4d85157f279f146ba, type: 3}
+  ojos3Boca1PielNegra:
+  - {fileID: 21300000, guid: c5dc119edb45c8f42a976dce77dda1f2, type: 3}
+  - {fileID: 21300000, guid: e45203295ef7bfc4c9bf9fa99289b534, type: 3}
+  - {fileID: 21300000, guid: 4e2a51487a62d314b8777d2a99899342, type: 3}
+  - {fileID: 21300000, guid: f0807c92e64f55a49a0caef474394f8c, type: 3}
+  ojos3Boca1PielOriental:
+  - {fileID: 21300000, guid: ccd2f814217e0e34a950654c831e3293, type: 3}
+  - {fileID: 21300000, guid: 5b23268f65d1df048897ef90caa677f6, type: 3}
+  - {fileID: 21300000, guid: 20225166483bb78449994c0352d70fe1, type: 3}
+  - {fileID: 21300000, guid: 84db196b5d8208449a733329eaabfe46, type: 3}
+  ojos3Boca2PielCaucasica:
+  - {fileID: 21300000, guid: 7e9a032d393b00e4a99231b9eead6c10, type: 3}
+  - {fileID: 21300000, guid: 1baf6abfb0813ee4ebc5be9406470868, type: 3}
+  - {fileID: 21300000, guid: d7ef080ce6de4da4a9dfc0e0353ace61, type: 3}
+  - {fileID: 21300000, guid: 597ea556a745b1a4e92caad873d9401c, type: 3}
+  ojos3Boca2PielMarron:
+  - {fileID: 21300000, guid: 3915ccf6826953b4eaf01423c8078fe6, type: 3}
+  - {fileID: 21300000, guid: 412513169ce42144faf45212a598861f, type: 3}
+  - {fileID: 21300000, guid: aa71ff817339ab84d9a967d83b18e7ea, type: 3}
+  - {fileID: 21300000, guid: d656b99a54ca9394ab2b0937cb4d6e9f, type: 3}
+  ojos3Boca2PielNegra:
+  - {fileID: 21300000, guid: 5fb088b1d385d4c4785ba4af1adf61c2, type: 3}
+  - {fileID: 21300000, guid: de9ae678353edfe43b175440705b4702, type: 3}
+  - {fileID: 21300000, guid: 612029a99fd609441b1fc55dabf00f2b, type: 3}
+  - {fileID: 21300000, guid: dffbaaa6d69f5264083fe376ac60fe93, type: 3}
+  ojos3Boca2PielOriental:
+  - {fileID: 21300000, guid: 5ecc9d8fb7426a046a1881fabf45b2e0, type: 3}
+  - {fileID: 21300000, guid: 27dbee79c3d9cc542a4b69845e32cc42, type: 3}
+  - {fileID: 21300000, guid: 6ba618304a076944ab10e647f654ff4f, type: 3}
+  - {fileID: 21300000, guid: 7d7a4f8ad13a84547ab0381968a2b692, type: 3}
+  ojos3Boca3PielCaucasica:
+  - {fileID: 21300000, guid: c874186a92502d346822dd193b42d89e, type: 3}
+  - {fileID: 21300000, guid: 9ff2649ac210d3241b79d2cab70558e5, type: 3}
+  - {fileID: 21300000, guid: 8e7584b33092a86419c2d964da2beb1b, type: 3}
+  - {fileID: 21300000, guid: e3bd04c6dcc9d9c49a4435cf32150b06, type: 3}
+  ojos3Boca3PielMarron:
+  - {fileID: 21300000, guid: dac38214f075f13489cba4db89824064, type: 3}
+  - {fileID: 21300000, guid: 8d667f1ab610dcd4dbe2859a468044b3, type: 3}
+  - {fileID: 21300000, guid: be61f99fb0acb97469cfd6eb8d817d68, type: 3}
+  - {fileID: 21300000, guid: 6b935f11fd92b9b49b7b4409be6ee74d, type: 3}
+  ojos3Boca3PielNegra:
+  - {fileID: 21300000, guid: 305b083e51f98894c9c0dc0b7e2be810, type: 3}
+  - {fileID: 21300000, guid: d8098e8bbe885104ebf0e49d6891cbd1, type: 3}
+  - {fileID: 21300000, guid: f1f657aa2ef307447a4506aba4d71a21, type: 3}
+  - {fileID: 21300000, guid: 581f6725b1936974ba57ad969e75cac3, type: 3}
+  ojos3Boca3PielOriental:
+  - {fileID: 21300000, guid: 5b1bdc0c2a724d341a451b9ffd83cca1, type: 3}
+  - {fileID: 21300000, guid: d927327845571c24f8bbeceb115455d6, type: 3}
+  - {fileID: 21300000, guid: 7205326ea48129f46bfef836d6961bf8, type: 3}
+  - {fileID: 21300000, guid: 1d4c2f18f07684641aef100084f94540, type: 3}
   nombresH:
   - Alejandro
   - Alberto
@@ -507,11 +703,11 @@ PrefabInstance:
     - target: {fileID: -6067185528594298527, guid: e2764574cc1601645813e76ebd4fe51d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 510ce9efb8ae64447bc72601baa62a69, type: 2}
+      objectReference: {fileID: 2100000, guid: d859369fba858b448b3b61620dceb740, type: 2}
     - target: {fileID: -3035608602465568333, guid: e2764574cc1601645813e76ebd4fe51d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ea6e01cf4258fd84d82f92b0956f0581, type: 2}
+      objectReference: {fileID: 2100000, guid: 8b70a6fa2d1eeaf468effa9c4c298987, type: 2}
     - target: {fileID: -2615453208677245630, guid: e2764574cc1601645813e76ebd4fe51d, type: 3}
       propertyPath: m_Name
       value: ropaIzquierda
@@ -519,15 +715,15 @@ PrefabInstance:
     - target: {fileID: -2005240004623065785, guid: e2764574cc1601645813e76ebd4fe51d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 510ce9efb8ae64447bc72601baa62a69, type: 2}
+      objectReference: {fileID: 2100000, guid: d859369fba858b448b3b61620dceb740, type: 2}
     - target: {fileID: -1996861194562861576, guid: e2764574cc1601645813e76ebd4fe51d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 510ce9efb8ae64447bc72601baa62a69, type: 2}
+      objectReference: {fileID: 2100000, guid: d859369fba858b448b3b61620dceb740, type: 2}
     - target: {fileID: -264430861247414160, guid: e2764574cc1601645813e76ebd4fe51d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 510ce9efb8ae64447bc72601baa62a69, type: 2}
+      objectReference: {fileID: 2100000, guid: d859369fba858b448b3b61620dceb740, type: 2}
     - target: {fileID: -8140499575222096, guid: e2764574cc1601645813e76ebd4fe51d, type: 3}
       propertyPath: m_Name
       value: ropaDerecha
@@ -547,7 +743,7 @@ PrefabInstance:
     - target: {fileID: 7483894711331120201, guid: e2764574cc1601645813e76ebd4fe51d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ea6e01cf4258fd84d82f92b0956f0581, type: 2}
+      objectReference: {fileID: 2100000, guid: 8b70a6fa2d1eeaf468effa9c4c298987, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

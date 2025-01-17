@@ -35,6 +35,127 @@ public class RandomicerPersonaje : MonoBehaviour
     public TextMeshProUGUI sexoPermiso;
     public TextMeshProUGUI fechaCaducidadPermiso;
     public TextMeshProUGUI numeroPasaportePermiso;
+    public SpriteRenderer fotoPasaporte;
+
+    // Foto pasaporte
+    public List<List<List<List<Sprite>>>> fotosPasaporte;
+
+    // Foto Ojos 1 Boca 1
+    // Foto Ojos 1 Boca 1 Piel Caucasica
+    public List<Sprite> ojos1Boca1PielCaucasica;
+
+    // Foto Ojos 1 Boca 1 Piel Marron
+    public List<Sprite> ojos1Boca1PielMarron;
+
+    // Foto Ojos 1 Boca 1 Piel Negra
+    public List<Sprite> ojos1Boca1PielNegra;
+
+    // Foto Ojos 1 Boca 1 Piel Oriental
+    public List<Sprite> ojos1Boca1PielOriental;
+
+    // Foto Ojos 1 Boca2
+    // Foto Ojos 1 Boca 2 Piel Caucasica
+    public List<Sprite> ojos1Boca2PielCaucasica;
+
+    // Foto Ojos 1 Boca 2 Piel Marron
+    public List<Sprite> ojos1Boca2PielMarron;
+
+    // Foto Ojos 1 Boca 2 Piel Negra
+    public List<Sprite> ojos1Boca2PielNegra;
+
+    // Foto Ojos 1 Boca 2 Piel Oriental
+    public List<Sprite> ojos1Boca2PielOriental;
+
+    // Foto Ojos 1 Boca3
+    // Foto Ojos 1 Boca 3 Piel Caucasica
+    public List<Sprite> ojos1Boca3PielCaucasica;
+
+    // Foto Ojos 1 Boca 3 Piel Marron
+    public List<Sprite> ojos1Boca3PielMarron;
+
+    // Foto Ojos 1 Boca 3 Piel Negra
+    public List<Sprite> ojos1Boca3PielNegra;
+
+    // Foto Ojos 1 Boca 3 Piel Oriental
+    public List<Sprite> ojos1Boca3PielOriental;
+
+    // Foto Ojos 2 Boca 1
+    // Foto Ojos 2 Boca 1 Piel Caucasica
+    public List<Sprite> ojos2Boca1PielCaucasica;
+
+    // Foto Ojos 2 Boca 1 Piel Marron
+    public List<Sprite> ojos2Boca1PielMarron;
+
+    // Foto Ojos 2 Boca 1 Piel Negra
+    public List<Sprite> ojos2Boca1PielNegra;
+
+    // Foto Ojos 2 Boca 1 Piel Oriental
+    public List<Sprite> ojos2Boca1PielOriental;
+
+    // Foto Ojos 2 Boca 2
+    // Foto Ojos 2 Boca 2 Piel Caucasica
+    public List<Sprite> ojos2Boca2PielCaucasica;
+
+    // Foto Ojos 2 Boca 2 Piel Marron
+    public List<Sprite> ojos2Boca2PielMarron;
+
+    // Foto Ojos 2 Boca 2 Piel Negra
+    public List<Sprite> ojos2Boca2PielNegra;
+
+    // Foto Ojos 2 Boca 2 Piel Oriental
+    public List<Sprite> ojos2Boca2PielOriental;
+
+    // Foto Ojos 2 Boca 3
+    // Foto Ojos 2 Boca 3 Piel Caucasica
+    public List<Sprite> ojos2Boca3PielCaucasica;
+
+    // Foto Ojos 2 Boca 3 Piel Marron
+    public List<Sprite> ojos2Boca3PielMarron;
+
+    // Foto Ojos 2 Boca 3 Piel Negra
+    public List<Sprite> ojos2Boca3PielNegra;
+
+    // Foto Ojos 2 Boca 3 Piel Oriental
+    public List<Sprite> ojos2Boca3PielOriental;
+
+    // Foto Ojos 3 Boca 1
+    // Foto Ojos 3 Boca 1 Piel Caucasica
+    public List<Sprite> ojos3Boca1PielCaucasica;
+
+    // Foto Ojos 3 Boca 1 Piel Marron
+    public List<Sprite> ojos3Boca1PielMarron;
+
+    // Foto Ojos 3 Boca 1 Piel Negra
+    public List<Sprite> ojos3Boca1PielNegra;
+
+    // Foto Ojos 3 Boca 1 Piel Oriental
+    public List<Sprite> ojos3Boca1PielOriental;
+
+    // Foto Ojos 3 Boca 2
+    // Foto Ojos 3 Boca 2 Piel Caucasica
+    public List<Sprite> ojos3Boca2PielCaucasica;
+
+    // Foto Ojos 3 Boca 2 Piel Marron
+    public List<Sprite> ojos3Boca2PielMarron;
+
+    // Foto Ojos 3 Boca 2 Piel Negra
+    public List<Sprite> ojos3Boca2PielNegra;
+
+    // Foto Ojos 3 Boca 2 Piel Oriental
+    public List<Sprite> ojos3Boca2PielOriental;
+
+    // Foto Ojos 3 Boca 3
+    // Foto Ojos 3 Boca 3 Piel Caucasica
+    public List<Sprite> ojos3Boca3PielCaucasica;
+
+    // Foto Ojos 3 Boca 3 Piel Marron
+    public List<Sprite> ojos3Boca3PielMarron;
+
+    // Foto Ojos 3 Boca 3 Piel Negra
+    public List<Sprite> ojos3Boca3PielNegra;
+
+    // Foto Ojos 3 Boca 3 Piel Oriental
+    public List<Sprite> ojos3Boca3PielOriental;
 
     //Listas de prueba
     public string[] nombresH = { "Alejandro", "Alberto", "Diego", "Carlos", "Hugo" };
@@ -48,6 +169,13 @@ public class RandomicerPersonaje : MonoBehaviour
     {
         pjCaracteristicas = personaje.GetComponent<Personaje>();
 
+        fotosPasaporte = new List<List<List<List<Sprite>>>>
+        {
+
+        };
+
+        listaFotos();
+
         generarPersonaje();
 
         generarDatosAleatorios();
@@ -55,12 +183,78 @@ public class RandomicerPersonaje : MonoBehaviour
         actualizarPj();
 
         actualizarPasaporte();
+
+        generarFoto();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void listaFotos()
+    {
+        // Inicializa todas las capas
+        // Ojos 1
+        fotosPasaporte.Add(new List<List<List<Sprite>>>());
+        fotosPasaporte[0].Add(new List<List<Sprite>>());
+        fotosPasaporte[0][0].Add(ojos1Boca1PielCaucasica);
+        fotosPasaporte[0][0].Add(ojos1Boca1PielMarron);
+        fotosPasaporte[0][0].Add(ojos1Boca1PielNegra);
+        fotosPasaporte[0][0].Add(ojos1Boca1PielOriental);
+
+        fotosPasaporte[0].Add(new List<List<Sprite>>());
+        fotosPasaporte[0][1].Add(ojos1Boca2PielCaucasica);
+        fotosPasaporte[0][1].Add(ojos1Boca2PielMarron);
+        fotosPasaporte[0][1].Add(ojos1Boca2PielNegra);
+        fotosPasaporte[0][1].Add(ojos1Boca2PielOriental);
+
+        fotosPasaporte[0].Add(new List<List<Sprite>>());
+        fotosPasaporte[0][2].Add(ojos1Boca3PielCaucasica);
+        fotosPasaporte[0][2].Add(ojos1Boca3PielMarron);
+        fotosPasaporte[0][2].Add(ojos1Boca3PielNegra);
+        fotosPasaporte[0][2].Add(ojos1Boca3PielOriental);
+
+        // Ojos 2
+        fotosPasaporte.Add(new List<List<List<Sprite>>>());
+        fotosPasaporte[1].Add(new List<List<Sprite>>());
+        fotosPasaporte[1][0].Add(ojos2Boca1PielCaucasica);
+        fotosPasaporte[1][0].Add(ojos2Boca1PielMarron);
+        fotosPasaporte[1][0].Add(ojos2Boca1PielNegra);
+        fotosPasaporte[1][0].Add(ojos2Boca1PielOriental);
+
+        fotosPasaporte[1].Add(new List<List<Sprite>>());
+        fotosPasaporte[1][1].Add(ojos2Boca2PielCaucasica);
+        fotosPasaporte[1][1].Add(ojos2Boca2PielMarron);
+        fotosPasaporte[1][1].Add(ojos2Boca2PielNegra);
+        fotosPasaporte[1][1].Add(ojos2Boca2PielOriental);
+
+        fotosPasaporte[1].Add(new List<List<Sprite>>());
+        fotosPasaporte[1][2].Add(ojos2Boca3PielCaucasica);
+        fotosPasaporte[1][2].Add(ojos2Boca3PielMarron);
+        fotosPasaporte[1][2].Add(ojos2Boca3PielNegra);
+        fotosPasaporte[1][2].Add(ojos2Boca3PielOriental);
+
+        // Ojos 3
+        fotosPasaporte.Add(new List<List<List<Sprite>>>());
+        fotosPasaporte[2].Add(new List<List<Sprite>>());
+        fotosPasaporte[2][0].Add(ojos3Boca1PielCaucasica);
+        fotosPasaporte[2][0].Add(ojos3Boca1PielMarron);
+        fotosPasaporte[2][0].Add(ojos3Boca1PielNegra);
+        fotosPasaporte[2][0].Add(ojos3Boca1PielOriental);
+
+        fotosPasaporte[2].Add(new List<List<Sprite>>());
+        fotosPasaporte[2][1].Add(ojos3Boca2PielCaucasica);
+        fotosPasaporte[2][1].Add(ojos3Boca2PielMarron);
+        fotosPasaporte[2][1].Add(ojos3Boca2PielNegra);
+        fotosPasaporte[2][1].Add(ojos3Boca2PielOriental);
+
+        fotosPasaporte[2].Add(new List<List<Sprite>>());
+        fotosPasaporte[2][2].Add(ojos3Boca3PielCaucasica);
+        fotosPasaporte[2][2].Add(ojos3Boca3PielMarron);
+        fotosPasaporte[2][2].Add(ojos3Boca3PielNegra);
+        fotosPasaporte[2][2].Add(ojos3Boca3PielOriental);
     }
 
     public void actualizarPj()
@@ -307,6 +501,1066 @@ public class RandomicerPersonaje : MonoBehaviour
             // Fecha de Caducidad
             DateTime fechaAleatoriaDeCaducidadPermiso = GenerarFechaAleatoria(fechaInicio2, fechaFin2);
             pjCaracteristicas.PasaporteDelPersonaje.PermisoDelViaje.FechaDeCaducidadPermiso = fechaAleatoriaDeCaducidadPermiso;
+        }
+    }
+
+    public void generarFoto()
+    {
+        // Ojos 1
+        if (pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.OjosFoto == ojos[0])
+        {
+            // Boca 1
+            if (pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.BocaFoto == bocas[0])
+            {
+                // Piel Caucasica
+                if (pjCaracteristicas.ColorPiel == coloresDePiel[0])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][0][0][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][0][0][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][0][0][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][0][0][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Marron
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[1])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][0][1][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][0][1][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][0][1][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][0][1][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Negra
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[2])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][0][2][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][0][2][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][0][2][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][0][2][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Oriental
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[3])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][0][3][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][0][3][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][0][3][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][0][3][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+            }
+            // Boca 2
+            else if (pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.BocaFoto == bocas[1])
+            {
+                // Piel Caucasica
+                if (pjCaracteristicas.ColorPiel == coloresDePiel[0])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][1][0][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][1][0][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][1][0][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][1][0][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Marron
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[1])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][1][1][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][1][1][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][1][1][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][1][1][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Negra
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[2])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][1][2][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][1][2][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][1][2][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][1][2][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Oriental
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[3])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][1][3][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][1][3][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][1][3][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][1][3][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+            }
+            // Boca 3
+            else if (pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.BocaFoto == bocas[2])
+            {
+                // Piel Caucasica
+                if (pjCaracteristicas.ColorPiel == coloresDePiel[0])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][2][0][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][2][0][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][2][0][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][2][0][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Marron
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[1])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][2][1][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][2][1][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][2][1][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][2][1][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Negra
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[2])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][2][2][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][2][2][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][2][2][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][2][2][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Oriental
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[3])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][2][3][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][2][3][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][2][3][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[0][2][3][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+            }
+        }
+        // Ojos 2
+        else if (pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.OjosFoto == ojos[1])
+        {
+            // Boca 1
+            if (pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.BocaFoto == bocas[0])
+            {
+                // Piel Caucasica
+                if (pjCaracteristicas.ColorPiel == coloresDePiel[0])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][0][0][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][0][0][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][0][0][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][0][0][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Marron
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[1])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][0][1][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][0][1][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][0][1][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][0][1][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Negra
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[2])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][0][2][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][0][2][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][0][2][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][0][2][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Oriental
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[3])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][0][3][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][0][3][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][0][3][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][0][3][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+            }
+            // Boca 2
+            else if (pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.BocaFoto == bocas[1])
+            {
+                // Piel Caucasica
+                if (pjCaracteristicas.ColorPiel == coloresDePiel[0])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][1][0][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][1][0][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][1][0][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][1][0][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Marron
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[1])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][1][1][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][1][1][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][1][1][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][1][1][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Negra
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[2])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][1][2][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][1][2][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][1][2][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][1][2][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Oriental
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[3])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][1][3][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][1][3][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][1][3][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][1][3][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+            }
+            // Boca 3
+            else if (pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.BocaFoto == bocas[2])
+            {
+                // Piel Caucasica
+                if (pjCaracteristicas.ColorPiel == coloresDePiel[0])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][2][0][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][2][0][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][2][0][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][2][0][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Marron
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[1])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][2][1][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][2][1][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][2][1][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][2][1][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Negra
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[2])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][2][2][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][2][2][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][2][2][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][2][2][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Oriental
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[3])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][2][3][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][2][3][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][2][3][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[1][2][3][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+            }
+        }
+        // Ojos 3
+        else if (pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.OjosFoto == ojos[2])
+        {
+            // Boca 1
+            if (pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.BocaFoto == bocas[0])
+            {
+                // Piel Caucasica
+                if (pjCaracteristicas.ColorPiel == coloresDePiel[0])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][0][0][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][0][0][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][0][0][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][0][0][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Marron
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[1])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][0][1][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][0][1][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][0][1][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][0][1][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Negra
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[2])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][0][2][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][0][2][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][0][2][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][0][2][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Oriental
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[3])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][0][3][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][0][3][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][0][3][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][0][3][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+            }
+            // Boca 2
+            else if (pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.BocaFoto == bocas[1])
+            {
+                // Piel Caucasica
+                if (pjCaracteristicas.ColorPiel == coloresDePiel[0])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][1][0][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][1][0][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][1][0][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][1][0][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Marron
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[1])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][1][1][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][1][1][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][1][1][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][1][1][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Negra
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[2])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][1][2][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][1][2][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][1][2][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][1][2][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Oriental
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[3])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][1][3][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][1][3][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][1][3][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][1][3][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+            }
+            // Boca 3
+            else if (pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.BocaFoto == bocas[2])
+            {
+                // Piel Caucasica
+                if (pjCaracteristicas.ColorPiel == coloresDePiel[0])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][2][0][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][2][0][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][2][0][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][2][0][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Marron
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[1])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][2][1][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][2][1][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][2][1][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][2][1][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Negra
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[2])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][2][2][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][2][2][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][2][2][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][2][2][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+                // Piel Oriental
+                else if (pjCaracteristicas.ColorPiel == coloresDePiel[3])
+                {
+                    // Ropa Roja
+                    if (pjCaracteristicas.Ropa == ropas[0])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][2][3][0];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Amarilla
+                    else if (pjCaracteristicas.Ropa == ropas[1])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][2][3][1];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Azul
+                    else if (pjCaracteristicas.Ropa == ropas[2])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][2][3][2];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                    // Ropa Verde
+                    else if (pjCaracteristicas.Ropa == ropas[3])
+                    {
+                        pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto = fotosPasaporte[2][2][3][3];
+                        fotoPasaporte.sprite = pjCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.Foto;
+                    }
+                }
+            }
         }
     }
 

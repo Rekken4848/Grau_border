@@ -16,6 +16,11 @@ public class SistemaJuego : MonoBehaviour
     public float dinero;
     public bool nivelIniciado = false;
     public bool nivelFinalizado = false;
+    public GameObject canvasFinal;
+    public TextMeshProUGUI canvasAciertosFinal;
+    public TextMeshProUGUI canvasDineroFinal;
+
+    public ControladorDinero cDinero;
 
     // Datos personaje a spawnear
     public GameObject personaje;
@@ -93,6 +98,9 @@ public class SistemaJuego : MonoBehaviour
         if(ronda == numRondas)
         {
             nivelFinalizado = true;
+            canvasFinal.SetActive(true);
+            canvasAciertosFinal.text = aciertos.ToString() + "/20";
+            canvasDineroFinal.text = dinero.ToString() + "€";
         }
         else
         {
@@ -102,7 +110,7 @@ public class SistemaJuego : MonoBehaviour
         }
     }
 
-    public bool comprobarAcierto()
+    public bool comprobarAcierto(bool aceptar)
     {
         // Comprobar si el pasaporte es correcto
         if (personaActualCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.OjosFoto == personaActualCaracteristicas.Ojos && personaActualCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.BocaFoto == personaActualCaracteristicas.Boca && personaActualCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.RopaFoto == personaActualCaracteristicas.Ropa && personaActualCaracteristicas.PasaporteDelPersonaje.FotoDelPasaporte.ColorPiel == personaActualCaracteristicas.ColorPiel)
@@ -121,9 +129,20 @@ public class SistemaJuego : MonoBehaviour
                     // Es de nuestro pais, todo correcto
                     if (personaActualCaracteristicas.PasaporteDelPersonaje.LugarDeNacimiento == "Espana")
                     {
-                        aciertos++;
-                        dinero += 100f;
-                        return true;
+                        if (aceptar)
+                        {
+                            aciertos++;
+                            dinero += 100f;
+                            cDinero.AnadirDinero(100);
+                            return true;
+                        }
+                        else
+                        {
+                            fallos++;
+                            dinero -= 50f;
+                            cDinero.AnadirDinero(-50);
+                            return false;
+                        }
                     }
                     else
                     {
@@ -140,44 +159,111 @@ public class SistemaJuego : MonoBehaviour
                                 personaActualCaracteristicas.PasaporteDelPersonaje.LugarDeNacimiento == personaActualCaracteristicas.PasaporteDelPersonaje.PermisoDelViaje.LugarDeNacimientoPermiso)
                             {
                                 // Sus datos del permiso coinciden con los del pasaporte
-                                aciertos++;
-                                dinero += 100f;
-                                return true;
+                                if (aceptar)
+                                {
+                                    aciertos++;
+                                    dinero += 100f;
+                                    cDinero.AnadirDinero(100);
+                                    return true;
+                                }
+                                else
+                                {
+                                    fallos++;
+                                    dinero -= 50f;
+                                    cDinero.AnadirDinero(-50);
+                                    return false;
+                                }
                             }
                             else
                             {
-                                fallos++;
-                                dinero -= 50f;
-                                return false;
+                                if (aceptar)
+                                {
+                                    fallos++;
+                                    dinero -= 50f;
+                                    cDinero.AnadirDinero(-50);
+                                    return false;
+                                }
+                                else
+                                {
+                                    aciertos++;
+                                    dinero += 100f;
+                                    cDinero.AnadirDinero(100);
+                                    return true;
+                                }
                             }
                         }
                         else
                         {
-                            fallos++;
-                            dinero -= 50f;
-                            return false;
+                            if (aceptar)
+                            {
+                                fallos++;
+                                dinero -= 50f;
+                                cDinero.AnadirDinero(-50);
+                                return false;
+                            }
+                            else
+                            {
+                                aciertos++;
+                                dinero += 100f;
+                                cDinero.AnadirDinero(100);
+                                return true;
+                            }
                         }
                     }
                 }
                 else
                 {
-                    fallos++;
-                    dinero -= 50f;
-                    return false;
+                    if (aceptar)
+                    {
+                        fallos++;
+                        dinero -= 50f;
+                        cDinero.AnadirDinero(-50);
+                        return false;
+                    }
+                    else
+                    {
+                        aciertos++;
+                        dinero += 100f;
+                        cDinero.AnadirDinero(100);
+                        return true;
+                    }
+                    
                 }
             }
             else
             {
-                fallos++;
-                dinero -= 50f;
-                return false;
+                if (aceptar)
+                {
+                    fallos++;
+                    dinero -= 50f;
+                    cDinero.AnadirDinero(-50);
+                    return false;
+                }
+                else
+                {
+                    aciertos++;
+                    dinero += 100f;
+                    cDinero.AnadirDinero(100);
+                    return true;
+                }
             }
         }
         else
         {
-            fallos++;
-            dinero -= 50f;
-            return false;
+            if (aceptar)
+            {
+                fallos++;
+                dinero -= 50f;
+                cDinero.AnadirDinero(-50);
+                return false;
+            }
+            else
+            {
+                aciertos++;
+                dinero += 100f;
+                cDinero.AnadirDinero(100);
+                return true;
+            }
         }
     }
 }

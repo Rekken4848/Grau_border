@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Papel
   - Cuno
+  - Barrera
+  - Destruccion
+  - cuno_verde
+  - cuno_rojo
   layers:
   - Default
   - TransparentFX

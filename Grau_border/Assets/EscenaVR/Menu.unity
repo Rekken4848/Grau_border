@@ -13904,12 +13904,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7022517371193042178, guid: db72f7e6d393ab84c89048d1b40fbe74, type: 3}
+      propertyPath: m_ModelPrefab
+      value: 
+      objectReference: {fileID: 8910181468729594819, guid: 6d33c72992b4c5f478752223b9307aef, type: 3}
+    - target: {fileID: 7022517372711429602, guid: db72f7e6d393ab84c89048d1b40fbe74, type: 3}
+      propertyPath: m_ModelPrefab
+      value: 
+      objectReference: {fileID: 7098546075441528024, guid: 9480f990167ce5f4aafb3c7e24022b51, type: 3}
     - target: {fileID: 8724434566089098236, guid: db72f7e6d393ab84c89048d1b40fbe74, type: 3}
       propertyPath: m_Name
       value: XR Interaction Setup Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6980555649359014628, guid: db72f7e6d393ab84c89048d1b40fbe74, type: 3}
+    - {fileID: 3867833820386088722, guid: db72f7e6d393ab84c89048d1b40fbe74, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db72f7e6d393ab84c89048d1b40fbe74, type: 3}
@@ -28942,6 +28952,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5345413724704244349, guid: a86ad46e4e513394ca93fd2a3ed2a9d4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
     - target: {fileID: 5498062446424934724, guid: a86ad46e4e513394ca93fd2a3ed2a9d4, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -29722,7 +29736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -56714,7 +56728,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5345413724704244349, guid: a86ad46e4e513394ca93fd2a3ed2a9d4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Juego
+      value: Juego_Hugo
       objectReference: {fileID: 0}
     - target: {fileID: 6522220158215248631, guid: a86ad46e4e513394ca93fd2a3ed2a9d4, type: 3}
       propertyPath: m_Name

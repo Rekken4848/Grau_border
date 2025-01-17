@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.UIElements;
 using UnityEngine;
 
 public class PasaportePersonaje : MonoBehaviour
@@ -98,6 +95,7 @@ public class PasaportePersonaje : MonoBehaviour
         private Sprite bocaFoto;
         private Material ropaFoto;
         private Material colorPielFoto;
+        private Sprite foto;
 
         public Sprite OjosFoto
         {
@@ -121,6 +119,12 @@ public class PasaportePersonaje : MonoBehaviour
         {
             get { return colorPielFoto; }
             set { colorPielFoto = value; }
+        }
+
+        public Sprite Foto
+        {
+            get { return foto; }
+            set { foto = value; }
         }
     }
 
